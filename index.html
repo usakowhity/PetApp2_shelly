@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetApp2 Portable | AIペットアプリ生成ツール</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
+    }
+    header {
+      background: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+    }
+    header img.logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+    .hero {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .hero img {
+      width: 700px;
+      max-width: 95%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 0;
+      color: #444;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #777;
+    }
+    a {
+      color: #0078d7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/readme/pets/logo.png" class="logo" alt="PetApp2 Logo">
+  <h1>🐾 PetApp2 Portable</h1>
+  <p>ユーザー自身のペット画像・動画を登録して楽しめる、AIペットアプリ第2弾。</p>
+</header>
+
+<div class="hero">
+  <img src="assets/readme/pets/hero.png" alt="PetApp2 Hero Image">
+</div>
+
+<section>
+  <h2>🔹 概要</h2>
+  <p>
+    <strong>PetApp2 Portable</strong> は、ユーザーが飼っている犬・猫・うさぎなどのペット画像や動画を登録し、
+    デスクトップ上で表情や動作を再現できる AI ペットアプリです。
+  </p>
+  <p>
+    ZIP を展開するだけで利用でき、Python ランタイムを同梱した
+    <strong>Portable構成（PCの好きな場所に解凍して使えます／USB・SDカードも可）</strong> になっています。
+  </p>
+  <p>起動は <code>run.bat</code> を実行するだけ。インストールは不要です。</p>
+</section>
+
+<section>
+  <h2>🔹 主な特徴</h2>
+  <ul>
+    <li><strong>15種類の状態（n1～n3, p1〜p12）に対応</strong></li>
+    <li><strong>AI画像/動画生成ガイド（Gemini / Copilot / Pika）を搭載</strong></li>
+    <li><strong>プロフィールからAI生成プロンプトを自動生成</strong></li>
+    <li><strong>Portable版としてインストール不要、run.bat から起動可能</strong></li>
+  </ul>
+</section>
+
+<section>
+  <h2>🔹 動作環境</h2>
+  <ul>
+    <li>OS：Windows 10 / Windows 11</li>
+    <li>GPU：不要</li>
+    <li>Python：同梱済み（Portable版）</li>
+    <li>インストール：不要（ZIP展開のみ）</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🔹 使い方</h2>
+  <ol>
+    <li>ZIP をダウンロードし、PCの好きな場所に解凍</li>
+    <li><strong>run.bat</strong> を起動</li>
+    <li>プロフィール登録 → 状態ごとの画像/動画を割り当て</li>
+    <li>PlayWindow でペットが動作開始</li>
+    <li>笑顔や声掛けに応じて状態が切り替わります</li>
+  </ol>
+</section>
+
+<section>
+  <h2>🔹 ダウンロード</h2>
+  <p><strong>Portable Edition（PCの好きな場所に解凍して使えます）</strong><br>
+    <a href="https://github.com/usakowhity/PetApp2-portable/releases">https://github.com/usakowhity/PetApp2-portable/releases</a>
+  </p>
+
+  <p><strong>GitHub Edition（開発者向け）</strong><br>
+    <a href="https://github.com/usakowhity/PetApp2-portable">https://github.com/usakowhity/PetApp2-portable</a>
+  </p>
+</section>
+
+<section>
+  <h2>🔹 PetApp2 デモ版（3種類）</h2>
+  <table>
+    <tr>
+      <th>デモ版名</th>
+      <th>ペット種</th>
+      <th>リポジトリ</th>
+      <th>ダウンロード</th>
+    </tr>
+    <tr>
+      <td>PetApp2_shelly</td>
+      <td>犬（Shelly）</td>
+      <td><a href="https://github.com/usakowhity/PetApp2_shelly">GitHub</a></td>
+      <td><a href="https://github.com/usakowhity/PetApp2_shelly/releases/latest">Releases</a></td>
+    </tr>
+    <tr>
+      <td>PetApp2_mimi</td>
+      <td>猫（Mimi）</td>
+      <td><a href="https://github.com/usakowhity/PetApp2_mimi">GitHub</a></td>
+      <td><a href="https://github.com/usakowhity/PetApp2_mimi/releases/latest">Releases</a></td>
+    </tr>
+    <tr>
+      <td>PetApp2-peter</td>
+      <td>うさぎ（Peter）</td>
+      <td><a href="https://github.com/usakowhity/PetApp2-peter">GitHub</a></td>
+      <td><a href="https://github.com/usakowhity/PetApp2-peter/releases/latest">Releases</a></td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>📄 License</h2>
+  <p>MIT License<br>
+  Copyright (c) 2024–2026 usakowhity</p>
+</section>
+
+<footer>
+  <p>Made with ❤️ by usakowhity</p>
+</footer>
+
+</body>
+</html>
