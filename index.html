@@ -27,8 +27,8 @@
       margin-top: 20px;
     }
     .hero img {
-      width: 700px;
-      max-width: 95%;
+      width: 560px;   /* ← 80% に縮小 */
+      max-width: 90%; /* ← スマホ対応で少し余裕を持たせる */
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
@@ -79,13 +79,13 @@
 <body>
 
 <header>
-  <img src="assets/readme/pets/logo.png" class="logo" alt="PetApp2 Logo">
+  <img src="assets/ui/logo.png" class="logo" alt="PetApp2 Logo">
   <h1>🐾 PetApp2 Portable</h1>
   <p>ユーザー自身のペット画像・動画を登録して楽しめる、AIペットアプリ第2弾。</p>
 </header>
 
 <div class="hero">
-  <img src="assets/readme/pets/hero.png" alt="PetApp2 Hero Image">
+  <img src="assets/ui/hero.png" alt="PetApp2 Hero Image">
 </div>
 
 <section>
@@ -124,17 +124,18 @@
 <section>
   <h2>🔹 使い方</h2>
   <ol>
-    <li>ZIP をダウンロードし、PCの好きな場所に解凍</li>
-    <li><strong>run.bat</strong> を起動</li>
-    <li>プロフィール登録 → 状態ごとの画像/動画を割り当て</li>
+    <li>ZIP をダウンロードし、PCの好きな場所（内蔵SSD/HDD、USBメモリ、SDカードなど）に解凍</li>
+    <li>フォルダ内の <strong>run.bat</strong> を起動</li>
+    <li>「ようこそ！」画面でペットのプロフィールを登録</li>
+    <li>画像・動画を各状態（n1〜n3, p1〜p12）に割り当て</li>
     <li>PlayWindow でペットが動作開始</li>
-    <li>笑顔や声掛けに応じて状態が切り替わります</li>
+    <li>笑顔（顔認識）や声掛け（音声認識）に応じて状態が切り替わります</li>
   </ol>
 </section>
 
 <section>
   <h2>🔹 ダウンロード</h2>
-  <p><strong>Portable Edition（PCの好きな場所に解凍して使えます）</strong><br>
+  <p><strong>Portable Edition（PCの好きな場所に解凍して使えます／USB・SDカードも可）</strong><br>
     <a href="https://github.com/usakowhity/PetApp2-portable/releases">https://github.com/usakowhity/PetApp2-portable/releases</a>
   </p>
 
